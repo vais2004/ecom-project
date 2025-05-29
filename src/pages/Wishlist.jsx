@@ -1,4 +1,5 @@
 import { useDispatch, useSelector } from "react-redux";
+import { Link } from "react-router-dom";
 import { addToWishlist, removeFromWishlist } from "../features/wishlistReducer";
 import { addToCart, removeFromCart } from "../features/cartReducer";
 import { useState } from "react";
@@ -52,12 +53,19 @@ export default function WishlistPage() {
         )}
 
         {wishlistItems.length === 0 ? (
-          <h5 className="text-center py-4">
-            <i>
-              It looks like your wishlist is craving attention. Add something
-              it’ll love...! 💘
-            </i>
-          </h5>
+          <>
+            <h5 className="text-center py-4">
+              <i>
+                It looks like your wishlist is craving attention. Add something
+                it’ll love...! 💘
+              </i>
+            </h5>
+            <div className="d-grid gap-2 col-4 mx-auto py-4">
+              <Link className="btn btn-outline-warning" to="/products">
+                Continue shopping...!
+              </Link>
+            </div>
+          </>
         ) : (
           <>
             <h5 className="py-4">

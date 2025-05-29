@@ -54,7 +54,97 @@ export default function App() {
         </div>
 
         {/* Carousel */}
-        <div className="mt-5 bg-light">
+                  <div className="py-4">
+            <div
+              id="carouselExampleSlidesOnly"
+              className="carousel slide"
+              data-bs-ride="carousel"
+            >
+              <div className="carousel-indicators">
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleSlidesOnly"
+                  data-bs-slide-to="0"
+                  className="active"
+                  aria-current="true"
+                  aria-label="Slide 1"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleSlidesOnly"
+                  data-bs-slide-to="1"
+                  aria-label="Slide 2"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleSlidesOnly"
+                  data-bs-slide-to="2"
+                  aria-label="Slide 3"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleSlidesOnly"
+                  data-bs-slide-to="3"
+                  aria-label="Slide 4"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleSlidesOnly"
+                  data-bs-slide-to="4"
+                  aria-label="Slide 5"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleSlidesOnly"
+                  data-bs-slide-to="5"
+                  aria-label="Slide 6"
+                ></button>
+              </div>
+              <div className="carousel-inner">
+                <div className="carousel-item active">
+                  <img
+              src="https://assets-global.website-files.com/6523ed2d670117e5922bd1d3/6569c51a8f5de07a8689b3cc_655222fa52c3b2554888c9a6_Retail-Software-Development.jpeg"
+                   className="d-block w-100"
+                    onClick={() => navigate("/products")}
+                  />
+                </div>
+                <div className="carousel-item">
+                  <img
+                    src="https://explainerd.com/wp-content/uploads/2022/08/Ecommerce-Product-Videos-The-Definitive-Guide.jpg"
+                    className="d-block w-100"
+                    alt="Festive Product 2"
+                  />
+                </div>
+                 
+              </div>
+              <button
+                className="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselExampleSlidesOnly"
+                data-bs-slide="prev"
+              >
+                <span
+                  className="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span className="visually-hidden">Previous</span>
+              </button>
+              <button
+                className="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExampleSlidesOnly"
+                data-bs-slide="next"
+              >
+                <span
+                  className="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span className="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+
+        {/* <div className="mt-5 bg-light">
           <div id="carouselExample" className="carousel slide">
             <div className="carousel-inner">
               {[
@@ -119,7 +209,7 @@ export default function App() {
               <span className="visually-hidden">Next</span>
             </button>
           </div>
-        </div>
+        </div> */}
 
         {/* New Arrivals Section */}
         <div className="row my-4 g-3">

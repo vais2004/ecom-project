@@ -51,7 +51,7 @@ export default function Orders() {
           <p className="text-muted">
             <i>Your fashion soulmate is waiting...!</i>
           </p>
-          <a href="/products" className="btn btn-primary mt-4">
+          <a href="/products" className="btn btn-outline-warning col-4 mt-4">
             Shop Now
           </a>
         </main>

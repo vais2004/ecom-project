@@ -52,9 +52,9 @@ export default function Login() {
   };
 
   const handleLogout = () => {
-      setIsLogin(true);
+    setIsLogin(true);
     setFormData({ name: "", email: "", password: "", confirmPassword: "" });
-  
+
     dispatch(logout());
     toast.error("You have been signed out.");
   };
@@ -73,73 +73,6 @@ export default function Login() {
             </h2>
 
             {!user ? (
-              // <form onSubmit={handleSubmit}>
-              //   {!isLogin && (
-              //     <>
-              //       <label htmlFor="name" className="form-label">
-              //         Name:
-              //       </label>
-              //       <input
-              //         type="text"
-              //         placeholder="Enter your name"
-              //         className="form-control mb-3"
-              //         id="name"
-              //         name="name"
-              //         value={formData.name}
-              //         onChange={handleChange}
-              //       />
-              //     </>
-              //   )}
-
-              //   <label htmlFor="email" className="form-label">
-              //     Email:
-              //   </label>
-              //   <input
-              //     type="email"
-              //     placeholder="Enter your email"
-              //     className="form-control mb-3"
-              //     id="email"
-              //     name="email"
-              //     value={formData.email}
-              //     onChange={handleChange}
-              //   />
-
-              //   <label htmlFor="password" className="form-label">
-              //     Password:
-              //   </label>
-              //   <input
-              //     type="password"
-              //     placeholder="Enter your password"
-              //     className="form-control mb-3"
-              //     id="password"
-              //     name="password"
-              //     value={formData.password}
-              //     onChange={handleChange}
-              //   />
-
-              //   {!isLogin && (
-              //     <>
-              //       <label htmlFor="confirmPassword" className="form-label">
-              //         Confirm Password:
-              //       </label>
-              //       <input
-              //         type="password"
-              //         placeholder="Confirm your password"
-              //         className="form-control mb-3"
-              //         id="confirmPassword"
-              //         name="confirmPassword"
-              //         value={formData.confirmPassword}
-              //         onChange={handleChange}
-              //       />
-              //     </>
-              //   )}
-
-              //   <button
-              //     type="submit"
-              //     className="btn btn-primary col-12 rounded mb-3">
-              //     {isLogin ? "Login" : "Sign Up"}
-              //   </button>
-              // </form>
               <form onSubmit={handleSubmit}>
                 {!isLogin && (
                   <>

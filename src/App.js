@@ -15,7 +15,7 @@ export default function App() {
 
       <main className="container pt-3">
         <div className="row justify-content-center text-center">
-          {/* Category Cards */}
+          {/* category */}
           {["Men", "Women", "Kids"].map((category, i) => {
             const imgSrcs = {
               Men: "https://cdn1.iconfinder.com/data/icons/user-pictures/100/male3-256.png",
@@ -32,7 +32,8 @@ export default function App() {
                   className="bg-light p-3 rounded d-flex flex-column align-items-center"
                   style={{
                     cursor: "pointer",
-                    maxWidth: "150px",
+                    maxWidth: "160px",
+                    minWidth: "120px",
                     width: "100%",
                   }}
                   onClick={() => navigate(`/outfits/${category}`)}>
@@ -40,11 +41,11 @@ export default function App() {
                     src={imgSrcs[category]}
                     alt={`${category} category`}
                     className="img-fluid"
-                    style={{ width: "100%", height: "auto" }}
+                    style={{ width: "60%", height: "auto" }}
                   />
-                  <div>
-                    <span className="badge text-bg-secondary px-2 py-2 fs-6 d-block mt-2">
-                      {category}
+                  <div className="col-12">
+                    <span className="badge text-bg-secondary fw-normal px-3 py-2 fs-5 d-block mt-2">
+                      <i>{category}</i>
                     </span>
                   </div>
                 </div>
@@ -53,145 +54,68 @@ export default function App() {
           })}
         </div>
 
-        {/* Carousel */}
-                  <div className="py-4">
-            <div
-              id="carouselExampleSlidesOnly"
-              className="carousel slide"
-              data-bs-ride="carousel"
-            >
-              <div className="carousel-indicators">
-                <button
-                  type="button"
-                  data-bs-target="#carouselExampleSlidesOnly"
-                  data-bs-slide-to="0"
-                  className="active"
-                  aria-current="true"
-                  aria-label="Slide 1"
-                ></button>
-                <button
-                  type="button"
-                  data-bs-target="#carouselExampleSlidesOnly"
-                  data-bs-slide-to="1"
-                  aria-label="Slide 2"
-                ></button>
-                <button
-                  type="button"
-                  data-bs-target="#carouselExampleSlidesOnly"
-                  data-bs-slide-to="2"
-                  aria-label="Slide 3"
-                ></button>
-                <button
-                  type="button"
-                  data-bs-target="#carouselExampleSlidesOnly"
-                  data-bs-slide-to="3"
-                  aria-label="Slide 4"
-                ></button>
-                <button
-                  type="button"
-                  data-bs-target="#carouselExampleSlidesOnly"
-                  data-bs-slide-to="4"
-                  aria-label="Slide 5"
-                ></button>
-                <button
-                  type="button"
-                  data-bs-target="#carouselExampleSlidesOnly"
-                  data-bs-slide-to="5"
-                  aria-label="Slide 6"
-                ></button>
-              </div>
-              <div className="carousel-inner">
-                <div className="carousel-item active">
-                  <img
-              src="https://assets-global.website-files.com/6523ed2d670117e5922bd1d3/6569c51a8f5de07a8689b3cc_655222fa52c3b2554888c9a6_Retail-Software-Development.jpeg"
-                   className="d-block w-100"
-                    onClick={() => navigate("/products")}
-                  />
-                </div>
-                <div className="carousel-item">
-                  <img
-                    src="https://explainerd.com/wp-content/uploads/2022/08/Ecommerce-Product-Videos-The-Definitive-Guide.jpg"
-                    className="d-block w-100"
-                    alt="Festive Product 2"
-                  />
-                </div>
-                 
-              </div>
+        {/* carousel */}
+        <div className="py-4">
+          <div
+            id="carouselExampleSlidesOnly"
+            className="carousel slide"
+            data-bs-ride="carousel">
+            <div className="carousel-indicators">
               <button
-                className="carousel-control-prev"
                 type="button"
                 data-bs-target="#carouselExampleSlidesOnly"
-                data-bs-slide="prev"
-              >
-                <span
-                  className="carousel-control-prev-icon"
-                  aria-hidden="true"
-                ></span>
-                <span className="visually-hidden">Previous</span>
-              </button>
+                data-bs-slide-to="0"
+                className="active"
+                aria-current="true"
+                aria-label="Slide 1"></button>
               <button
-                className="carousel-control-next"
                 type="button"
                 data-bs-target="#carouselExampleSlidesOnly"
-                data-bs-slide="next"
-              >
-                <span
-                  className="carousel-control-next-icon"
-                  aria-hidden="true"
-                ></span>
-                <span className="visually-hidden">Next</span>
-              </button>
+                data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleSlidesOnly"
+                data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
             </div>
-          </div>
-
-        {/* <div className="mt-5 bg-light">
-          <div id="carouselExample" className="carousel slide">
+            <button
+              onClick={() => navigate("/products")}
+              className="col-12 btn btn-outline-secondary rounded-0">
+              Shop the Full Collection →
+            </button>
             <div className="carousel-inner">
-              {[
-                {
-                  src: "https://static.vecteezy.com/system/resources/previews/004/759/229/non_2x/super-big-sale-background-free-vector.jpg",
-                  captionTitle: "BUY 1 GET 1 FREE",
-                  captionText:
-                    "Gen Young Fashion from Rs.249 + Extra discount + Free delivery",
-                },
-                {
-                  src: "https://assets-global.website-files.com/6523ed2d670117e5922bd1d3/6569c51a8f5de07a8689b3cc_655222fa52c3b2554888c9a6_Retail-Software-Development.jpeg",
-                  captionTitle: "",
-                  captionText: "",
-                },
-                {
-                  src: "https://explainerd.com/wp-content/uploads/2022/08/Ecommerce-Product-Videos-The-Definitive-Guide.jpg",
-                  captionTitle: "",
-                  captionText: "",
-                },
-              ].map(({ src, captionTitle, captionText }, idx) => (
-                <div
-                  key={idx}
-                  className={`carousel-item${idx === 0 ? " active" : ""}`}>
-                  <img
-                    src={src}
-                    className="d-block w-100 img-fluid"
-                    alt={`Slide ${idx + 1}`}
-                    style={{
-                      maxHeight: "550px",
-                      objectFit: "cover",
-                      cursor: "pointer",
-                    }}
-                    onClick={() => navigate("/products")}
-                  />
-                  {(captionTitle || captionText) && (
-                    <div className="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-2">
-                      <h3>{captionTitle}</h3>
-                      <p>{captionText}</p>
-                    </div>
-                  )}
-                </div>
-              ))}
+              <div className="carousel-item position-relative active">
+                <img
+                  src="https://assets-global.website-files.com/6523ed2d670117e5922bd1d3/6569c51a8f5de07a8689b3cc_655222fa52c3b2554888c9a6_Retail-Software-Development.jpeg"
+                  className="d-block w-100"
+                  onClick={() => navigate("/products")}
+                />
+              </div>
+
+              <div className="carousel-item position-relative">
+                <img
+                  src="https://explainerd.com/wp-content/uploads/2022/08/Ecommerce-Product-Videos-The-Definitive-Guide.jpg"
+                  className="d-block w-100"
+                  alt="Festive Product 2"
+                  onClick={() => navigate("/products")}
+                />
+              </div>
+              <div className="carousel-item position-relative">
+                <img
+                  src="https://static.vecteezy.com/system/resources/previews/011/883/308/non_2x/fashion-clothing-store-for-women-template-hand-drawn-cartoon-flat-illustration-with-shopping-buying-products-cloth-or-dresses-design-vector.jpg"
+                  className="d-block w-100"
+                  alt="Festive Product 3"
+                  style={{ height: "391.5px" }}
+                  onClick={() => navigate("/products")}
+                />
+              </div>
             </div>
+
             <button
               className="carousel-control-prev"
               type="button"
-              data-bs-target="#carouselExample"
+              data-bs-target="#carouselExampleSlidesOnly"
               data-bs-slide="prev">
               <span
                 className="carousel-control-prev-icon"
@@ -201,7 +125,7 @@ export default function App() {
             <button
               className="carousel-control-next"
               type="button"
-              data-bs-target="#carouselExample"
+              data-bs-target="#carouselExampleSlidesOnly"
               data-bs-slide="next">
               <span
                 className="carousel-control-next-icon"
@@ -209,9 +133,9 @@ export default function App() {
               <span className="visually-hidden">Next</span>
             </button>
           </div>
-        </div> */}
+        </div>
 
-        {/* New Arrivals Section */}
+        {/* new arrivals */}
         <div className="row my-4 g-3">
           {[1, 2].map((item) => (
             <div key={item} className="col-12 col-md-6">

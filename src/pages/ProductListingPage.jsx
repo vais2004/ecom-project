@@ -116,7 +116,7 @@ export default function ProductListingPage() {
       <main className="container-fluid py-3">
         {outfits ? (
           <div className="row">
-            {/* Filters column */}
+            {/* filters */}
             <div className="col-md-3">
               <div className="d-flex justify-content-between">
                 <h5>Filters</h5>
@@ -263,7 +263,7 @@ export default function ProductListingPage() {
               </label>
             </div>
 
-            {/* Products column */}
+            {/* products list */}
             <div className="col-md-9 bg-light py-4 px-4">
               <h5>
                 Showing All Products{" "}

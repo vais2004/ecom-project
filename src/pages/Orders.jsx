@@ -13,9 +13,18 @@ export default function Orders() {
     setOrders(storedOrders);
   }, []);
 
- const addDays = (dateString, days) => {
+  
+  const addDays = (dateString, days) => {
+    // convert the string to object
     const date = new Date(dateString);
+
+    // if the date is valid
+    if (isNaN(date.getTime())) {
+      return "Invalid Date";
+    }
+
     date.setDate(date.getDate() + days);
+
     return date.toDateString();
   };
 

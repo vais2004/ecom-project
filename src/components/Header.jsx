@@ -92,43 +92,44 @@ const Navbar = () => {
                 className="nav-link pe-2 px-3 position-relative">
                 Your Orders <i className="bi bi-bag"></i>
               </Link>
-              {isAuthenticated ? (
-                <div className="position-relative">
-                  <img
-                    src="https://tse1.mm.bing.net/th?id=OIP.JwEJgEC-hx43MR-2OJa_IQHaHw&pid=Api&P=0&h=220"
-                    alt="Avatar"
-                    className="rounded-circle mx-4"
-                    style={{ width: "35px", height: "35px", cursor: "pointer" }}
-                    onClick={() => setShowUserInfo(!showUserInfo)}
-                  />
-                  {showUserInfo && (
-                    <div
-                      className="position-absolute bg-white p-3 rounded"
-                      style={{
-                        top: "50px",
-                        right: "0",
-                        minWidth: "200px",
-                        zIndex: 1,
-                      }}>
-                      <p className="mb-1">
-                        <strong>Name:</strong> {user.name || "User"}
-                      </p>
-                      <p className="mb-2">
-                        <strong>Email:</strong> {user.email}
-                      </p>
-                      <button
-                        className="btn btn-sm btn-outline-danger w-100"
-                        onClick={handleLogout}>
-                        Sign Out
-                      </button>
-                    </div>
-                  )}
-                </div>
-              ) : (
-                <Link to="/login" className="nav-link px-3">
-                  Login
-                </Link>
-              )}
+
+              <div className="position-relative">
+                <img
+                  src="https://harvesthosts-marketing-assets.s3.amazonaws.com/wp-content/uploads/2021/11/whoknows-1.jpg"
+                  alt="Avatar"
+                  className="rounded-circle mx-4"
+                  style={{ width: "35px", height: "35px", cursor: "pointer" }}
+                  onClick={() => {
+                    if (isAuthenticated) {
+                      setShowUserInfo(!showUserInfo);
+                    } else {
+                      navigate("/login");
+                    }
+                  }}
+                />
+                {isAuthenticated && showUserInfo && (
+                  <div
+                    className="position-absolute bg-white p-3 rounded"
+                    style={{
+                      top: "50px",
+                      right: "0",
+                      minWidth: "200px",
+                      zIndex: 1,
+                    }}>
+                    <p className="mb-1">
+                      <strong>Name:</strong> {user.name || "User"}
+                    </p>
+                    <p className="mb-2">
+                      <strong>Email:</strong> {user.email}
+                    </p>
+                    <button
+                      className="btn btn-sm btn-outline-danger w-100"
+                      onClick={handleLogout}>
+                      Sign Out
+                    </button>
+                  </div>
+                )}
+              </div>
             </div>
           </div>
         </div>

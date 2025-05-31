@@ -13,16 +13,35 @@ export default function Orders() {
     setOrders(storedOrders);
   }, []);
 
-  
-  const addDays = (dateString, days) => {
-    // convert the string to object
-    const date = new Date(dateString);
+  // const addDays = (dateString, days) => {
+  //   // convert the string to object
+  //   const date = new Date(dateString);
 
-    // if the date is valid
+  //   // if the date is valid
+  //   if (isNaN(date.getTime())) {
+  //     return "Invalid Date";
+  //   }
+
+  //   date.setDate(date.getDate() + days);
+
+  //   return date.toDateString();
+  // };
+
+  const addDays = (dateString, days) => {
+    let date;
+    //parse the date using date constructor
+    try {
+      date = new Date(dateString);
+    } catch (error) {
+      return "Invalid Date";
+    }
+
+    // if date is actually valid
     if (isNaN(date.getTime())) {
       return "Invalid Date";
     }
 
+    // add days
     date.setDate(date.getDate() + days);
 
     return date.toDateString();

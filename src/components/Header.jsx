@@ -98,7 +98,7 @@ const Navbar = () => {
                   src="https://harvesthosts-marketing-assets.s3.amazonaws.com/wp-content/uploads/2021/11/whoknows-1.jpg"
                   alt="Avatar"
                   className="rounded-circle mx-4"
-                  style={{ width: "35px", height: "35px", cursor: "pointer" }}
+                  style={{ width: "38px", height: "35px", cursor: "pointer" }}
                   onClick={() => {
                     if (isAuthenticated) {
                       setShowUserInfo(!showUserInfo);

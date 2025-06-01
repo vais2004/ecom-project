@@ -27,23 +27,9 @@ export default function Orders() {
   //   return date.toDateString();
   // };
 
-  const addDays = (dateString, days) => {
-    let date;
-    //parse the date using date constructor
-    try {
-      date = new Date(dateString);
-    } catch (error) {
-      return "Invalid Date";
-    }
-
-    // if date is actually valid
-    if (isNaN(date.getTime())) {
-      return "Invalid Date";
-    }
-
-    // add days
+    const addDays = (dateString, days) => {
+    const date = new Date(dateString);
     date.setDate(date.getDate() + days);
-
     return date.toDateString();
   };
 

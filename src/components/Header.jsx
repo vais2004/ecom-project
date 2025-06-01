@@ -90,7 +90,7 @@ const Navbar = () => {
               <Link
                 to="/orders"
                 className="nav-link pe-2 px-3 position-relative">
-                Your Orders <i className="bi bi-bag"></i>
+                Your Orders <i class="bi bi-bag-check"></i>
               </Link>
 
               <div className="position-relative">

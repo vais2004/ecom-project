@@ -69,7 +69,7 @@ export default function PlaceOrder() {
       id: Date.now(),
       address: formData,
       items: cartItems,
-      date: new Date().toLocaleString(),
+      date: new Date().toISOString(),
     };
     localStorage.setItem(
       "orders",

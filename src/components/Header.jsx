@@ -19,6 +19,8 @@ const Navbar = () => {
   const wishlistCount = useSelector(
     (state) => state.wishlist?.wishlistItems?.length || 0
   );
+  const orders = JSON.parse(localStorage.getItem("orders")) || [];
+  const totalOrderCount = orders.length;
 
   const user = useSelector((state) => state.user.userInfo);
   const isAuthenticated = Boolean(user);
@@ -90,7 +92,12 @@ const Navbar = () => {
               <Link
                 to="/orders"
                 className="nav-link pe-2 px-3 position-relative">
-                Your Orders <i class="bi bi-bag-check"></i>
+                Orders <i class="bi bi-bag-check"></i>
+              <span
+                  className="position-absolute top-0 me-5 mt-2 start-100 translate-middle badge rounded-pill bg-danger"
+                  style={{ fontSize: "0.7rem" }}>
+                  {totalOrderCount}
+                </span>
               </Link>
 
               <div className="position-relative">

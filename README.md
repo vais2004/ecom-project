@@ -91,13 +91,36 @@ It's built using **HTML**, **CSS**, and **JavaScript**.
   - Credit/Debit Card
 - Finalize Order Button
 
+### • Your Orders Page:
+- Display Orders:
+  - Order number and Order Date
+  - Shipping address details
+  - Payment method
+  - Items details:
+       - Image
+       - Name
+       - Quantity
+       - Price
+  - Shipping date
+  - Cancle Order Button
+- Cancle Order:
+  - On clicking Cancel Order:
+       - Confirmation popup appears
+       - If confirmed:
+          - Order is removed
+          - A success message is displayed 
+  
 ### • Login Page
 - Input fields:
-  - Name
+  - Name (for sign up only)
   - Email
   - Password
-  - Confirm Password
-- Submit button
+  - Confirm Password (for sign up only)
+- Buttons:
+  - Login / Sign Up (based on current mode)
+  - Continue as Guest
+  - Sign Out (visible only when user is logged in)
+  - Toggle Link to switch between Login and Sign Up
 
 ### • Header
 - Logo: 🛍️ MyStyleSpot
@@ -106,6 +129,7 @@ It's built using **HTML**, **CSS**, and **JavaScript**.
   - Login
   - Wishlist
   - Cart
+  - Orders
 
 ### • Footer
 - Social Media Icons:

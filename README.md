@@ -5,6 +5,13 @@ It's built using **HTML**, **CSS**, and **JavaScript**.
 
 ---
 
+###Hosted Link:(https://ecom-project-jade.vercel.app/)
+ )
+###Backend code URL:(https://github.com/vais2004/mystylespot-backend)
+###Frontend code URL: (https://github.com/vais2004/ecom-project)
+
+
+
 ## ✨ Pages:
 
 ### • Home Page

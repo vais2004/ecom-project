@@ -114,13 +114,14 @@ It's built using **HTML**, **CSS**, and **JavaScript**.
 - React.js – Component-based UI development
 - React Redux – State management
 - Redux Toolkit – Simplified Redux logic and async actions
+- Redux Persist – State in localStorage (like login info, cart)
 - React Router DOM – Routing and navigation
 - Axios – API communication and data fetching
 
 **Styling & UI**
 - Bootstrap 5 – Responsive design framework for consistent UI components
 - Inline Styling – Quick, component-level styling using JSX
-
+- React Toastify (Notifications)
 ---
 
 ## 🛠️ Backend
@@ -138,31 +139,51 @@ It's built using **HTML**, **CSS**, and **JavaScript**.
 
 ## 📸 Demo Images:
 ### Home Page:
-![Screenshot 2025-05-01 213255](https://github.com/user-attachments/assets/0606aab4-7b4e-4a72-9076-1a5f53f52bb3)
+![Screenshot 2025-06-02 111210](https://github.com/user-attachments/assets/8050a7ac-6705-4299-8de8-bc9b7f4c28b5)
 
-![Screenshot 2025-05-01 213311](https://github.com/user-attachments/assets/c84884ea-d2c8-4eee-ad5a-ed2b42f5113b)
+![Screenshot 2025-06-02 111230](https://github.com/user-attachments/assets/e3a538f3-7e70-474f-b011-d9393b32bdcd)
+
 ### Login Page
-![Screenshot 2025-05-01 213330](https://github.com/user-attachments/assets/2551a3de-416e-401b-a50e-3898df8bf206)
+![image](https://github.com/user-attachments/assets/f22fcf60-92c9-411b-addb-408e6de51004)
 
 ### Product By Category Page:
-![Screenshot 2025-05-22 124611](https://github.com/user-attachments/assets/54c07d2b-9f4d-4bee-8883-d8778ec75030)
-![Screenshot 2025-05-22 124626](https://github.com/user-attachments/assets/f20967dc-9283-4401-a451-8631aef0e5c6)
-![Screenshot 2025-05-22 124640](https://github.com/user-attachments/assets/ac414910-638f-459e-86b1-a093c6076da2)
+![Screenshot 2025-06-02 111522](https://github.com/user-attachments/assets/98c8712a-b9f2-414f-bb3f-892e102270c9)
+
+![Screenshot 2025-06-02 111537](https://github.com/user-attachments/assets/9c584f39-7394-49ab-b643-469183177b01)
+
+![Screenshot 2025-06-02 111504](https://github.com/user-attachments/assets/ec7cb922-3b4b-46d4-9cdf-d709b467f156)
 
 ### All Product Page
-![Screenshot 2025-05-22 124701](https://github.com/user-attachments/assets/425905cb-d30a-4b91-87d1-0064ad601d57)
+![Screenshot 2025-06-02 111701](https://github.com/user-attachments/assets/30ff2016-3a93-41a1-a51f-933986624748)
+
+![Screenshot 2025-06-02 111714](https://github.com/user-attachments/assets/be5493eb-60da-4abe-bf1b-cec876740fad)
 
 ### Wishlist Page 
-![Screenshot 2025-05-22 124840](https://github.com/user-attachments/assets/3b192fc0-c55a-4f72-a0fa-7eb1358555a0)
+![Screenshot 2025-06-02 111822](https://github.com/user-attachments/assets/c98ccacd-1edd-4e95-9140-aad49c236ca9)
+
 #### If Wishlist is empty
-![Screenshot 2025-05-22 124940](https://github.com/user-attachments/assets/b5212943-0a53-44c4-aad2-b3c4b53fc641)
+![Screenshot 2025-06-02 111840](https://github.com/user-attachments/assets/56eda48f-a8e7-45d4-993b-2001031b7835)
 
 ### Cart Page
-![Screenshot 2025-05-22 124857](https://github.com/user-attachments/assets/30d3082c-a712-4e60-abe7-ea6b320101c5)
+![image](https://github.com/user-attachments/assets/537fa0fa-d11c-449c-84b4-efc3da5c6e12)
+
 #### If Cart is empty
-![Screenshot 2025-05-22 124926](https://github.com/user-attachments/assets/52f98a63-e64f-4e34-a59c-9f2b21a0e821)
+![image](https://github.com/user-attachments/assets/5cf29f0d-758e-4c45-8f97-e07e064b98b4)
 
 ### Place Order Page
-![Screenshot 2025-05-22 124911](https://github.com/user-attachments/assets/7ed14915-0aa3-4ad6-9c08-929d81f12bdc)
+![Screenshot 2025-06-02 112331](https://github.com/user-attachments/assets/87a3290c-9128-42db-89e0-9355df534314)
+
+![Screenshot 2025-06-02 112342](https://github.com/user-attachments/assets/5d18c3a7-4dad-4642-a1f5-55a9e08dd49e)
+
 #### After Finalize Order
-![Screenshot 2025-05-22 125022](https://github.com/user-attachments/assets/a50f5ced-c003-4542-835e-24bdf7da4419)
+![image](https://github.com/user-attachments/assets/a99194e2-a582-46b2-8662-c1ef4659a544)
+
+### Your Orders Page
+![Screenshot 2025-06-02 112717](https://github.com/user-attachments/assets/f3948a15-e6f3-48f6-8bb2-ea38c9054490)
+
+![Screenshot 2025-06-02 112832](https://github.com/user-attachments/assets/51ceeef5-a933-4766-88ea-e729bcd4f718)
+
+![Screenshot 2025-06-02 112859](https://github.com/user-attachments/assets/ac73119b-eb2f-4cd9-85a6-f2e37dbc5ee5)
+
+#### If Your Orders Page is empty
+![Screenshot 2025-06-02 112925](https://github.com/user-attachments/assets/6f962199-f30a-4a0e-a1f3-913caf1a1ccb)

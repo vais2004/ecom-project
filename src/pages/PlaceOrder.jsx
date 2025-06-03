@@ -285,7 +285,7 @@ export default function PlaceOrder() {
             </div>
           </div>
 
-          <h5 className="mt-4">Select Payment Method</h5>
+           <h5 className="mt-4">Select Payment Method</h5>
           <div className="col-12">
             <div className="form-check form-check-inline">
               <input
@@ -322,6 +322,50 @@ export default function PlaceOrder() {
               <label className="form-check-label">Credit/Debit Card</label>
             </div>
           </div>
+
+          {/* if payment is by UPI or by card */}
+          {formData.paymentMethod === "UPI" && (
+            <div className="col-12">
+              <h6 className="mt-3">Scan this QR to Pay:</h6>
+              <img
+                src="https://as1.ftcdn.net/v2/jpg/04/68/08/48/1000_F_468084889_jVY5deQe43L7JQRtsQb1UEFerg3OkQVx.jpg"
+                alt="Fake UPI QR"
+                className="img-thumbnail "
+                style={{ width: "150px" }}
+              />
+            </div>
+          )}
+
+          {formData.paymentMethod === "Card" && (
+            <div className="col-12">
+              <h6 className="mt-3">Enter Card Details</h6>
+              <input
+                type="text"
+                className="form-control mb-2"
+                placeholder="Card Number"
+                maxLength="16"
+              />
+              <input
+                type="text"
+                className="form-control mb-2"
+                placeholder="Name on Card"
+              />
+              <div className="d-flex gap-2">
+                <input
+                  type="text"
+                  className="form-control"
+                  placeholder="MM/YY"
+                  maxLength="5"
+                />
+                <input
+                  type="text"
+                  className="form-control"
+                  placeholder="CVV"
+                  maxLength="3"
+                />
+              </div>
+            </div>
+          )}
 
           <div className="col-12 mt-4">
             <button className="btn btn-success w-100" type="submit">
